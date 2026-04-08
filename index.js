@@ -1,3 +1,16 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 10000;
+
+// Einfacher Healthcheck, damit Render den Port erkennt
+app.get('/', (req, res) => {
+    res.send('Bot läuft! ✅');
+});
+
+app.listen(port, () => {
+    console.log(`Server läuft auf Port ${port}`);
+});
+
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 
 const client = new Client({
@@ -6,7 +19,7 @@ const client = new Client({
 
 // ⚙️ ANPASSEN
 const TOKEN = process.env.TOKEN;
-const port = process.env.PORT || 10000;
+
 
 client.once('ready', () => {
     console.log(`Bot online als ${client.user.tag}`);

@@ -5,7 +5,7 @@ const client = new Client({
 });
 
 // ⚙️ ANPASSEN
-const TOKEN = "MTQ5MTQ0ODA1MTI4MDEyMTkzOA.GiBVGT.l5DgT5cybyanMCxN-KJFEZnUETnD3Y50xhTNaE";
+const TOKEN = process.env.TOKEN;
 
 client.once('ready', () => {
     console.log(`Bot online als ${client.user.tag}`);

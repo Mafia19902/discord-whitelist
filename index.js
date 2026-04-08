@@ -6,7 +6,7 @@ const client = new Client({
 
 // ⚙️ ANPASSEN
 const TOKEN = process.env.TOKEN;
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
 client.once('ready', () => {
     console.log(`Bot online als ${client.user.tag}`);

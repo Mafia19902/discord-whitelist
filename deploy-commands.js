@@ -1,6 +1,7 @@
 const { REST, Routes, SlashCommandBuilder } = require('discord.js');
 
 const TOKEN = process.env.TOKEN;
+const PORT = process.env.PORT || 3000;
 const CLIENT_ID = "1491448051280121938";
 
 const commands = [

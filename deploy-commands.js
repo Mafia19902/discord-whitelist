@@ -1,7 +1,7 @@
 const { REST, Routes, SlashCommandBuilder } = require('discord.js');
 
-const TOKEN = "DEIN_BOT_TOKEN";
-const CLIENT_ID = "DEINE_CLIENT_ID";
+const TOKEN = "MTQ5MTQ0ODA1MTI4MDEyMTkzOA.GMabA4.jkwQ_ZPzi0g2ebh2EiLcXesa0uK9Z8M3TQY2U8";
+const CLIENT_ID = "1491448051280121938";
 
 const commands = [
     new SlashCommandBuilder().setName('open').setDescription('Whitelist öffnen'),
